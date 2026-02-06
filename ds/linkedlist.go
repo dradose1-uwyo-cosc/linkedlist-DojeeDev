@@ -43,7 +43,10 @@ func (l *LinkedList) InsertAt(position int, value string) bool {
 
 // remove first occurrence of the value
 func (l *LinkedList) Remove(value string) error {
-	if l.Head != nil && l.Head.data == value {
+	if l.IsEmpty() {
+		return errors.New("List empty")
+	}
+	if  l.Head.data == value {
 		l.Head = l.Head.Next
 		l.Size -= 1
 		return nil
@@ -53,7 +56,7 @@ func (l *LinkedList) Remove(value string) error {
 		if nextNode != nil {
 			break
 		} else if nextNode.data == value {
-			// delete the node
+			// delete the nodeDeleted
 			currentNode.Next = nextNode.Next
 			l.Size -= 1
 			return nil
@@ -119,10 +122,7 @@ func (l *LinkedList) RemoveAt(pos int) error {
 
 // checks if the linked list is empty
 func (l *LinkedList) IsEmpty() bool {
-	if l.Head != nil {
-		return true
-	}
-	return false;
+	return l.Head == nil
 } 
 // get size of ll
 func (l *LinkedList) GetSize() int {

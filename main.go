@@ -29,6 +29,7 @@ func main() {
 	linkedlist.Insert("fourth")
 	linkedlist.Insert("fifth")
 	linkedlist.RemoveAt(4)
+	linkedlist.Remove("fifth")
 	linkedlist.PrintList()
 	fmt.Println("The size of the linked list is:", linkedlist.GetSize())
 	fmt.Println("-------------")
@@ -40,17 +41,17 @@ func main() {
 	fmt.Println("The size of the linked list is:", linkedlist.GetSize())
 	fmt.Println("-------------")
 
-	//stack := &ds.Stack{}
-	//stack.Push("first")
-	//stack.Push("second")
-	//stack.Push("third")
-	//data, _ := stack.Pop()
-	//println("Popped from stack:", data)
+	stack := &ds.Stack{}
+	stack.Push("first")
+	stack.Push("second")
+	stack.Push("third")
+	data, _ := stack.Pop()
+	println("Popped from stack:", data)
 
-	//queue := &ds.Queue{}
-	//queue.Push("first")
-	//queue.Push("second")
-	//queue.Push("third")
-	//data, _ = queue.Pop()
-	//println("Popped from queue:", data)
+	queue := &ds.Queue{}
+	queue.Push("first")
+	queue.Push("second")
+	queue.Push("third")
+	data, _ = queue.Pop()
+	println("Popped from queue:", data)
 }
