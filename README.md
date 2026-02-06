@@ -1,12 +1,10 @@
-# [Name]
-## [Assignment #]
-## [Submission date: MM/DD/YY]
+# [Ivan]
+## [Assignment 1]
+## [Submission date: 02/05/26]
 ## Worked with/sources 
-* example
-* example
-* example
-* example
-## Project Quirks/ Things that don't work
-* example
-* example
-* example
+* https://en.wikipedia.org/wiki/Linked_list#Linearly_linked_lists
+* https://go.dev/tour/moretypes/1
+* https://gobyexample.com/custom-errors
+* Asked Gemmini what I should return for functions with a error return type if there isn't an error ( nil it said)
+
+
