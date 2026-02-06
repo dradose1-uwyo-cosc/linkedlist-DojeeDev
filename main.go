@@ -1,6 +1,6 @@
-//[Your Name Here]
+//Ivan Martin
 //COSC 3750
-//[Date Here]
+//2026-02-01
 //
 /*
 	Don't forget to run your go mod init command in your terminal
@@ -14,31 +14,31 @@ package main
 
 import (
 	"fmt"
-	/*"hw01/ds" */ //this needs to be changes to your module name and uncommented
+	"hw-linked/ds" 
 )
 
 func main() {
-	fmt.Println("Only here so the import doesn't leave an error")
+	// fmt.Println("Only here so the import doesn't leave an error")
 
-	//linkedlist := &ds.LinkedList{}
-	//linkedlist.InsertAt(0, "first")
-	//linkedlist.Insert("first")
-	//linkedlist.Insert("first")
-	//linkedlist.Insert("second")
-	//linkedlist.Insert("third")
-	//linkedlist.Insert("fourth")
-	//linkedlist.Insert("fifth")
-	//linkedlist.RemoveAt(4)
-	//linkedlist.PrintList()
-	//fmt.Println("The size of the linked list is:", linkedlist.GetSize())
-	//fmt.Println("-------------")
-	//linkedlist.RemoveAll("first")
-	//linkedlist.PrintList()
-	//fmt.Println("-------------")
-	//linkedlist.Reverse()
-	//linkedlist.PrintList()
-	//fmt.Println("The size of the linked list is:", linkedlist.GetSize())
-	//fmt.Println("-------------")
+	linkedlist := &ds.LinkedList{}
+	linkedlist.InsertAt(0, "first")
+	linkedlist.Insert("first")
+	linkedlist.Insert("first")
+	linkedlist.Insert("second")
+	linkedlist.Insert("third")
+	linkedlist.Insert("fourth")
+	linkedlist.Insert("fifth")
+	linkedlist.RemoveAt(4)
+	linkedlist.PrintList()
+	fmt.Println("The size of the linked list is:", linkedlist.GetSize())
+	fmt.Println("-------------")
+	linkedlist.RemoveAll("first")
+	linkedlist.PrintList()
+	fmt.Println("-------------")
+	linkedlist.Reverse()
+	linkedlist.PrintList()
+	fmt.Println("The size of the linked list is:", linkedlist.GetSize())
+	fmt.Println("-------------")
 
 	//stack := &ds.Stack{}
 	//stack.Push("first")
